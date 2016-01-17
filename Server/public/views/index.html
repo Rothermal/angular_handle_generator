@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Twit_Handles</title>
+    <script type="text/javascript" src="vendors/angular/angular.min.js"></script>
+    <script type="text/javascript" src="asset/scripts/client.min.js"></script>
+    <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/stylesheet.css">
+</head>
+<body ng-controller="MainController">
+<h1>Angular is Fun!!@@!!</h1>
+<button ng-click="twitterHandle()" class="btn-block btn-success">Generate Twitter Handles</button>
+<div ng-repeat="handle in handles track by $index" class="well col-md-4">
+<p>{{handle}}</p>
+<a href="https://twitter.com/{{handle}}">Check to see if name is available</a>
+</div>
+</body>
+</html>
